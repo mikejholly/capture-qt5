@@ -38,7 +38,7 @@
 **
 ****************************************************************************/
 
-#include "framecapture.h"
+#include "capture.h"
 
 #include <iostream>
 #include <QtWidgets>
@@ -47,14 +47,14 @@ int main(int argc, char * argv[])
 {
     if (argc != 3) {
         std::cout << "Capture a web page and save its internal frames in different images" << std::endl << std::endl;
-        std::cout << "  framecapture <url> <outputfile>" << std::endl;
+        std::cout << "  capture <url> <outputfile>" << std::endl;
         std::cout << std::endl;
         std::cout << "Notes:" << std::endl;
         std::cout << "  'url' is the URL of the web page to be captured" << std::endl;
         std::cout << "  'outputfile' is the prefix of the image files to be generated" << std::endl;
         std::cout << std::endl;
         std::cout << "Example: " << std::endl;
-        std::cout << "  framecapture qt-project.org trolltech.png" << std::endl;
+        std::cout << "  capture qt-project.org trolltech.png" << std::endl;
         std::cout << std::endl;
         std::cout << "Result:" << std::endl;
         std::cout << "  trolltech.png (full page)" << std::endl;
@@ -71,4 +71,4 @@ int main(int argc, char * argv[])
     capture.load(url, fileName);
 
     return a.exec();
-}
+

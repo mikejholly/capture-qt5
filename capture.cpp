@@ -38,7 +38,7 @@
 **
 ****************************************************************************/
 
-#include "framecapture.h"
+#include "capture.h"
 
 #include <iostream>
 
